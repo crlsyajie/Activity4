@@ -84,3 +84,16 @@ VALUES
     (8, 'Carmen', 'Fernandez', '222 Birch St, Taguig', '333-222-1111', 'carmen@example.com'),
     (9, 'Pedro', 'Santillan', '888 Spruce St, Bacolod', '888-777-6666', 'pedro@example.com'),
     (10, 'Sofia', 'Villanueva', '777 Walnut St, lollo', '111-999-3333', 'sofia@example.com');
+
+INSERT INTO appointments (appoint_id, animal_id, appoint_date, reason)
+VALUES
+    (1, 1, '2023-01-05', 'Annual check-up'),
+    (2, 2, '2023-01-10', 'Vaccination'),
+    (3, 3, '2023-02-02', 'Injury assessment'),
+    (4, 4, '2023-02-15', 'Dental cleaning'),
+    (5, 5, '2023-03-05', 'Skin condition'),
+    (6, 6, '2023-03-10', 'Check for fleas'),
+    (7, 2, '2023-04-12', 'Vaccination'),
+    (8, 8, '2023-04-18', 'Spaying/neutering'),
+    (9, 9, '2023-05-02', 'Allergy treatment'),
+    (10, 10, '2023-05-20', 'Eye infection');
