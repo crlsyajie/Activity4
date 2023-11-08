@@ -58,6 +58,19 @@ CREATE TABLE medicalrecords (
     FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id)
 );
 
+INSERT INTO animals (animal_id, name, species, breed, date_of_birth, gender, color)
+VALUES
+    (1, 'Fido', 'Dog', 'Golden Retriever', '2018-03-15', 'Male', 'Golden'),
+    (2, 'Whiskers', 'Cat', 'Siamese', '2019-07-20', 'Female', 'Cream'),
+    (3, 'Rocky', 'Dog', 'German Shepherd', '2017-05-10', 'Male', 'Black and Tan'),
+    (4, 'Fluffy', 'Cat', 'Persian', '2020-01-30', 'Male', 'White'),
+    (5, 'Luna', 'Dog', 'Labrador Retriever', '2019-11-25', 'Female', 'Yellow'),
+   (6, 'Mochi', 'Cat', 'Maine Coon', '2018-09-12', 'Male', 'Brown Tabby'),
+    (7, 'Bella', 'Dog', 'Poodle', '2020-04-05', 'Female', 'White'),
+    (8, 'Simba', 'Cat', 'Bengal', '2018-06-18', 'Male', 'Spotted Rosetted'),
+    (9, 'Max', 'Dog', 'Dachshund', '2020-07-14', 'Male', 'Black and Tan'),
+    (10, 'Cleo', 'Cat', 'Ragdoll', '2019-12-22', 'Female');
+
 
 INSERT INTO owners (owner_id, ofirst_name, olast_name, address, phone, email)
 VALUES
