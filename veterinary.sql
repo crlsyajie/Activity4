@@ -158,3 +158,9 @@ INNER JOIN animals AS an ON a.animal_id = an.animal_id
 INNER JOIN owners AS o ON an.owner_id = o.owner_id
 WHERE o.ofirst_name = 'Maria';
 
+SELECT a.name AS animal_name, COUNT(*) AS appointment_count
+FROM animals AS a
+INNER JOIN appointments AS ap ON a.animal_id = ap.animal_id
+GROUP BY a.name
+ORDER BY appointment_count DESC
+LIMIT 1;
