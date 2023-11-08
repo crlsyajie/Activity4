@@ -152,5 +152,9 @@ FROM animals;
 SELECT SUM(total_amount) AS total_sales
 FROM invoices;
 
-SELECT SUM(total_amount) AS total_sales
-FROM invoices;
+SELECT COUNT(*) AS total_appointments
+FROM appointments AS a
+INNER JOIN animals AS an ON a.animal_id = an.animal_id
+INNER JOIN owners AS o ON an.owner_id = o.owner_id
+WHERE o.ofirst_name = 'Maria';
+
