@@ -151,3 +151,6 @@ FROM animals;
 
 SELECT SUM(total_amount) AS total_sales
 FROM invoices;
+
+SELECT SUM(total_amount) AS total_sales
+FROM invoices;
