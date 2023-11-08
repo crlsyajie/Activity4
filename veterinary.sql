@@ -45,3 +45,15 @@ CREATE TABLE invoices (
     payment_date TIME,
     FOREIGN KEY (appoint_id) REFERENCES appointments(appoint_id)
 );
+
+CREATE TABLE medicalrecords (
+    record_id INT PRIMARY KEY,
+    animal_id INT,
+    record_date TIMESTAMP,
+    doctor_id INT,
+    diagnosis TEXT,
+    prescription TEXT,
+    notes TEXT,
+    FOREIGN KEY (animal_id) REFERENCES animals(animal_id),
+    FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id)
+);
